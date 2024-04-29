@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" id="brandLogo">Car Inventory</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Select your car</h1>
+    <div class="container">
+        <div class="selections">
+            <label for="brand">Select brand:</label>
+            <select id="brand">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="toyota">Toyota</option>
+                <option value="lada">Lada</option>
+            </select>
+            <label for="model">Select model:</label>
+            <select id="model">
+                <!-- Options will be populated dynamically based on brand selection -->
+            </select>
+            <label for="color">Select color:</label>
+            <select id="color">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+            <button onclick="calculatePrice()">Calculate Price</button>
+        </div>
+        <div class="price">
+            <h2>Estimated Price:</h2>
+            <p id="priceValue">-</p>
+        </div>
+    </div>
+    <img id="carImage" src="" alt="Car Image">
+
+    <script src="script.js"></script>
+</body>
+</html>
